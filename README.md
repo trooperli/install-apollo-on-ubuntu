@@ -74,6 +74,10 @@ Please follow the steps given in the [link](https://github.com/ApolloAuto/apollo
 <pre><code>bash docker/scripts/dev_start.sh
 bash docker/scripts/dev_into.sh
 </code></pre>
+
 Use the foolwoing command to start and stop Apollo:
+<pre><code> bash scripts/bootstrap.sh start
+bash scripts/bootstrap.sh stop
+</code></pre>
 
 
