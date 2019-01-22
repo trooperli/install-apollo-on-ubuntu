@@ -26,10 +26,12 @@ If cuda is successfully installed, in the command line type <pre><code>nvidia-sm
 </code></pre>
 
 ## Fork the Apollo repository
+
 **1. Install git lfs**
 <pre><code>curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
 sudo apt-get install git-lfs
 </code></pre>
+
 
 **2. Fork the apollo**
 <pre><code>git lfs clone https://github.com/ApolloAuto/apollo.git
@@ -39,9 +41,11 @@ git lfs fetch --all
 
 After step 2, make sure that the content in modules/dreamview/frontend/dist/app.bundle.js is not meta data but actual code. If the content is still meta data, remove the repository with<pre><code>rm -rf apollo</code></pre>and repeat step 2.
 
+
 **3. Install Docker**
 
 Please follow the steps given in this [link](https://docs.docker.com/install/linux/docker-ce/ubuntu/) to install docker. This step is pretty straight forward.  
+
 
 **4. Build and Release the Docker Container**
 
@@ -68,7 +72,9 @@ sudo pkill -SIGHUP dockerd
 docker run --runtime=nvidia --rm nvidia/cuda:9.0-base nvidia-smi
 </code></pre>
 
+
 **5. Run Apollo**
+
 First create a group docker and add user to it:
 <pre><code>sudo groupadd docker
 sudo usermod -aG docker $USER
