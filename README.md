@@ -76,7 +76,7 @@ bash docker/scripts/dev_into.sh
 </code></pre>
 
 Use the foolwoing command to start and stop Apollo:
-<pre><code> bash scripts/bootstrap.sh start
+<pre><code>bash scripts/bootstrap.sh start
 bash scripts/bootstrap.sh stop
 </code></pre>
 
