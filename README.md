@@ -43,3 +43,5 @@ After step 2, make sure that the content in modules/dreamview/frontend/dist/app.
 
 Please follow the steps given in this [link](https://docs.docker.com/install/linux/docker-ce/ubuntu/) to install docker. This step is pretty straight forward.  
 
+**4. Build and Release the Docker Container**
+
