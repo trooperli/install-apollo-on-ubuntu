@@ -69,13 +69,16 @@ docker run --runtime=nvidia --rm nvidia/cuda:9.0-base nvidia-smi
 </code></pre>
 
 **5. Run Apollo**
-
+First create a group docker and add user to it:
+<pre><code>sudo groupadd docker
+sudo usermod -aG docker $USER
+</code></pre>
 Please follow the steps given in the [link](https://github.com/ApolloAuto/apollo/blob/master/docs/howto/how_to_launch_Apollo.md) to run apollo. Use the following commands to get into the dev container:
 <pre><code>bash docker/scripts/dev_start.sh
 bash docker/scripts/dev_into.sh
 </code></pre>
 
-Use the foolwoing command to start and stop Apollo:
+Use the follwoing command to start and stop Apollo:
 <pre><code>bash scripts/bootstrap.sh start
 bash scripts/bootstrap.sh stop
 </code></pre>
