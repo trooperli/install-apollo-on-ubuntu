@@ -6,5 +6,15 @@ There are two ways of installing cuda and nvidia gpu, one is deb, the other is r
 
 ## Fork the Apollo repository
 1. Install git lfs
-<pre><code>curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+<pre><code>
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+sudo apt-get install git-lfs
 </code></pre>
+
+2. Fork the apollo
+<pre><code>
+git lfs clone https://github.com/ApolloAuto/apollo.git
+git lfs install
+git lfs fetch --all
+</code></pre>
+
