@@ -6,19 +6,17 @@ There are two ways of installing cuda and nvidia gpu, one is deb, the other is r
 
 ## Fork the Apollo repository
 1. Install git lfs
-<pre><code>
-curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+<pre><code>curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
 sudo apt-get install git-lfs
 </code></pre>
 
 2. Fork the apollo
-<pre><code>
-git lfs clone https://github.com/ApolloAuto/apollo.git
+<pre><code>git lfs clone https://github.com/ApolloAuto/apollo.git
 git lfs install
 git lfs fetch --all
 </code></pre>
 
-After step 2, make sure that the content in modules/dreamview/frontend/dist/app.bundle.js is not meta data but actual code. If the content is still meta data, remove the repository with <pre><code>rm -rf apollo</code></pre> and repeat step 2.
+After step 2, make sure that the content in modules/dreamview/frontend/dist/app.bundle.js is not meta data but actual code. If the content is still meta data, remove the repository with<pre><code>rm -rf apollo</code></pre>and repeat step 2.
 
 3. Install Docker
 
