@@ -40,5 +40,6 @@ git lfs fetch --all
 After step 2, make sure that the content in modules/dreamview/frontend/dist/app.bundle.js is not meta data but actual code. If the content is still meta data, remove the repository with<pre><code>rm -rf apollo</code></pre>and repeat step 2.
 
 **3. Install Docker**
+
 Please follow the steps given in this [link](https://docs.docker.com/install/linux/docker-ce/ubuntu/) to install docker. This step is pretty straight forward.  
 
