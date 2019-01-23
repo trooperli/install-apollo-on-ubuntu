@@ -42,12 +42,12 @@ git lfs fetch --all
 After step 2, make sure that the content in modules/dreamview/frontend/dist/app.bundle.js is not meta data but actual code. If the content is still meta data, remove the repository with<pre><code>rm -rf apollo</code></pre>and repeat step 2.
 
 
-**3. Install Docker**
+## Install Docker
 
 Please follow the steps given in this [link](https://docs.docker.com/install/linux/docker-ce/ubuntu/) to install docker. This step is pretty straight forward.  
 
 
-**4. Build and Release the Docker Container**
+## Build and Release the Docker Container
 
 Please follow the steps given in the [link](https://github.com/ApolloAuto/apollo/blob/master/docs/howto/how_to_build_and_release.md) to build and release the container.
 
@@ -73,7 +73,7 @@ docker run --runtime=nvidia --rm nvidia/cuda:10.0-base nvidia-smi
 </code></pre>
 
 
-**5. Run Apollo**
+## Run Apollo
 
 First create a group docker and add user to it:
 <pre><code>sudo groupadd docker
