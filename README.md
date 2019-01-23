@@ -84,7 +84,7 @@ Please follow the steps given in the [link](https://github.com/ApolloAuto/apollo
 bash docker/scripts/dev_into.sh
 </code></pre>
 
-Use the follwoing command to start and stop Apollo:
+Use the following command to start and stop Apollo:
 <pre><code>bash scripts/bootstrap.sh start
 bash scripts/bootstrap.sh stop
 </code></pre>
