@@ -51,7 +51,7 @@ Please follow the steps given in this [link](https://docs.docker.com/install/lin
 
 Please follow the steps given in the [link](https://github.com/ApolloAuto/apollo/blob/master/docs/howto/how_to_build_and_release.md) to build and release the container.
 
-Make sure to build cuda in the docker:
+Make sure to build cuda in the container:
 <pre><code># If you have nvidia-docker 1.0 installed: we need to remove it and all existing GPU containers
 docker volume ls -q -f driver=nvidia-docker | xargs -r -I{} -n1 docker ps -q -a -f volume={} | xargs -r docker rm -f
 sudo apt-get purge -y nvidia-docker
